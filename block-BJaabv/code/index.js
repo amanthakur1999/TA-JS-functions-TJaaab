@@ -8,9 +8,13 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(age) {
+
+  const puppyAge=7
+  return puppyAge*age
 }
+     calculateDogAge();
+     
 
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -19,9 +23,13 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age ,moviesInWeek) {
+  const weeksInMonth=4
+  const monthInYears=12
+  return age*moviesInWeek*weeksInMonth*monthInYears
+  
 }
+calculateMoviesToWatch();
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -29,9 +37,14 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function celsiusToFahrenheit(temperatureInCelsius) {
+  const div1=9;
+  const div2=5;
+  const add=32;
+  return temperatureInCelsius*div1/div2+add
+  
 }
+celsiusToFahrenheit();
 
 /*
 4. 🎖Create a function called fahrenheitToCelsius:
@@ -39,9 +52,13 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function fahrenheitToCelsius(temperatureInFahrenheit) {
+  const div1=9;
+  const div2=5;
+  const sub=32;
+  return temperatureInFahrenheit-sub*div1/div2
 }
+fahrenheitToCelsius();
 
 /*
 5. 🎖 Write a function pow(n, x) that returns x in power n.
@@ -51,9 +68,14 @@ function celsiusToFahrenheit() {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
-  // Your code goes here
+function pow(n,x) {
+  
+  if(n<0){
+    return `The number below 1 is not allowed`
+  }
+  return n**x
 }
+
 
 // Test
 pow(3, 2); // 9
@@ -78,8 +100,12 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN() {
-  // Your code goes here
+function sumOfN(n) {
+ let sum =1;
+ for (let i=1; i<=n; i++)
+    sum +=i
+    return sum
+
 }
 
 /*
