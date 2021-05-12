@@ -107,6 +107,7 @@ function sumOfN(n) {
     return sum
 
 }
+sumOfN();
 
 /*
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
@@ -118,9 +119,14 @@ function sumOfN(n) {
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
+function min(a ,b) {
+if (a>b){
+  return b
 }
+else if (a<b){
+  return a
+}
+ }
 
 min(0, 10);
 min(0, -10);
@@ -129,6 +135,8 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
-  // Your code goes here
+function typeCheck(n){
+   
+  return typeof n
 }
+typeof("Aman")
